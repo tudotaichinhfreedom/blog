@@ -1,11 +1,11 @@
 # Header Menu
 menu:
-  Home: /
+  Trang chủ: /
   Bảy cấp bậc đầu tư: /categories/Bay-cap-bac-dau-tu/
-  Projects: /projects/
+  Luật hấp dẫn: /categories/Luat-hap-dan/
+  Sự khởi đầu của giàu có: /categories/Su-khoi-dau-cua-giau-co/
   Blog: /archives/ # can set archive-dir in root config to custom value
-  Contact: /contact/
-  About: /about/
+  Giới thiệu: /about/
    
 rss: /atom.xml
 
