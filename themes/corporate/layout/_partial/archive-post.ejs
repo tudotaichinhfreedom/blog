@@ -3,16 +3,16 @@
     <% if (post.thumbnail) { %>
       <%- image_tag(post.thumbnail, {class: "img-responsive"}) %>
     <% } %>
+    <% if (post.video) { %>
+      <iframe width="100%" height="250" src="<%- post.video %>" frameborder="0" allowfullscreen></iframe>
+    <% } %>
   </div>
-  <% if (post.thumbnail) { %>
+  <% if (post.thumbnail || post.video) { %>
     <div class="col-md-8 col-sm-8">
   <% } else { %>
     <div class="col-xs-12">
   <% } %>
     <%- partial('post/title', {class_name: 'archive-article-title'}) %>
-    <% if (post.video) { %>
-      <iframe width="560" height="315" src="<%- post.video %>" frameborder="0" allowfullscreen></iframe>
-    <% } %>
     <ul class="blog-info">
       <li>
       	<i class="fa fa-calendar"></i> 
